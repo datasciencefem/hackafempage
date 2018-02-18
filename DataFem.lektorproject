@@ -1,5 +1,7 @@
 [project]
 name = DataFem
+url_style = relative
+url = https://kittylon.github.io/DataFem/
 
 [servers.ghpages]
 target = ghpages+https://kittylon/DataFem
