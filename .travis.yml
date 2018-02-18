@@ -1,0 +1,14 @@
+language: python
+
+python: 2.7
+
+install:
+  #lektor build dependencies
+  -pip install lektor
+
+script:
+  - lektor build
+
+deploy:
+  provider: script
+  script: "lektor deploy --username $GITHUB_USER --password $GITHUB_PASS"

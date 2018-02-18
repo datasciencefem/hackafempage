@@ -1,6 +1,6 @@
 _model: team-member
 ---
-name: Johana Salinas
+name: Johana
 ---
 _template: members.html
 ---

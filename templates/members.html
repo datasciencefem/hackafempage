@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
+{% block title %}{{ this.name }}{% endblock %}
 {% block body %}
-  <h2>{{ this.title }}</h2>
+  <h2>{{ this.name }}</h2>
   {% set members = site.query('/team')%}
   {{ members }}
   <ul>
