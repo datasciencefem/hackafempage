@@ -2,6 +2,6 @@ _model: page
 ---
 title: Team
 ---
-body: Hola
+body: Hi, these are our team members
 ---
 _template: members.html
