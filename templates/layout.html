@@ -12,7 +12,8 @@
         {% for href, title in [
           ['/blog', 'Blog'],
           ['/projects', 'Projects'],
-          ['/about', 'About']
+          ['/about', 'About'],
+          ['/team', 'Team'],
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>

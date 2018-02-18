@@ -1,0 +1,11 @@
+_model: team-member
+---
+name: Johana Salinas
+---
+_template: members.html
+---
+dob: 1991-06-06
+---
+email: johanasalinas6@gmail.com
+---
+last_name: Salinas
