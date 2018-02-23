@@ -1,7 +1,7 @@
 [project]
 name = DataFem
 url_style = relative
-url = https://github.com/datasciencefem/hackafempage
+url = https://datasciencefem.github.io/hackafempage/
 
 [servers.ghpages]
 target = ghpages+https://datasciencefem/hackafempage
