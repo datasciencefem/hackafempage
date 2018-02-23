@@ -3,7 +3,7 @@
 
 * We will be developing for 12 hours, in order to get our landing page.*
 
-Requirements:
+## Requirements:
 
 * Carry your computer.
 
