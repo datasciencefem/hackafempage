@@ -1,8 +1,7 @@
 [project]
-name = hackafempage-1
+name = hackafempage
 url_style = relative
-url = https://datasciencefem.com/
+url = http://datasciencefem.com/
 
 [servers.ghpages]
-target = ghpages+https://datasciencefem/hackafempage/?
-cname=www.datasciencefem.com
+target = ghpages+https://datasciencefem/hackafempage/?cname=www.datasciencefem.com
