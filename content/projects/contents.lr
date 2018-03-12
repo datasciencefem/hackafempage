@@ -2,10 +2,8 @@ title: Projects
 ---
 body:
 
-It contain the information about out project
+This is a list of the projects:
 
 * Project 1
 * Project 2
 * Project 3
----
-_template: projects.html
