@@ -94,11 +94,11 @@ img::selection {
 }
 
 img::-moz-selection {
-  background-color: : #52163C;
+  background: transparent;
 }
 
 #mainNav {
-  background-color: #52163C;
+  background-color: #212529;
 }
 
 #mainNav .navbar-toggler {
@@ -131,8 +131,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #52163C;
-
+  color: #07726D;
 }
 
 @media (min-width: 992px) {
@@ -142,36 +141,26 @@ img::-moz-selection {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
-    border: deepskyblue;
-    background-color: #52163C;
+    border: none;
+    background-color: transparent;
   }
-
   #mainNav .navbar-brand {
     font-size: 1.75em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    background-color: #52163C;
   }
-
-  #mainNav .close-modal {
-    background-color: deepskyblue;
-  }
-
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
-    background-color: #52163C;
   }
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
     background-color: #212529;
-    background-color: #52163C;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
     padding: 12px 0;
-    background-color: #52163C;
   }
 }
 
