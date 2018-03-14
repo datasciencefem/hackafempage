@@ -1,0 +1,11 @@
+_model: student-member
+---
+name: Isabel
+---
+_template: students.html
+---
+email: 
+---
+last_name: Buritica
+---
+image: marie.jpg

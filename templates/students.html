@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  <h2>{{ this.title }}</h2>
+  {% set students = site.query('/students') %}
+  <ul>
+  {% for student in students %}
+    <li><a href="{{ student|url }}">{{ student.name }} {{ student.last_name }}</a></li>
+  {% endfor %}
+  </ul>
+{% endblock %}

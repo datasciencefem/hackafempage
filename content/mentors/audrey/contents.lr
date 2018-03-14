@@ -1,0 +1,11 @@
+_model: mentor
+---
+name: Audrey
+---
+_template: mentors.html
+---
+contribution: Helped us develop our first hackathon
+---
+last_name: Roy
+---
+image: marie.jpg

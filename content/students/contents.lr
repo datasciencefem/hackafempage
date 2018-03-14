@@ -1,0 +1,7 @@
+_model: page
+---
+title: Students
+---
+_template: students.html
+---
+body: Our students

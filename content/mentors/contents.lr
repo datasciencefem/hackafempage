@@ -1,0 +1,7 @@
+_model: page
+---
+title: Mentors
+---
+body: Our great mentors
+---
+_template: mentors.html

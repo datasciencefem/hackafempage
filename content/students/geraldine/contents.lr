@@ -1,0 +1,9 @@
+_model: student-member
+---
+name: Geraldine
+---
+_template: students.html
+---
+last_name: Echavarria
+---
+image: marie.jpg
