@@ -47,6 +47,12 @@ section h3.section-subheading {
   text-transform: none;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+#services h3.section-subheading {
+  margin-bottom: 30px;
+}
+#mentors  {
+  padding: 50px 0;
+}
 
 @media (min-width: 768px) {
   section {
@@ -54,6 +60,11 @@ section h3.section-subheading {
   }
 }
 
+@media (min-width: 768px) {
+  #services {
+    padding: 80px 70px;
+  }
+}
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -222,6 +233,15 @@ header.masthead .intro-text .intro-heading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+
+#services .row .text-center{
+  display: block;
+  margin: auto;
+}
+
+#services .buttom{
+    padding-top: 25px;
 }
 
 #portfolio .portfolio-item {
@@ -649,7 +669,6 @@ section#contact .col-lg-12 .text-center{
   padding-top: 25px;
 }
 
-
 footer {
   padding: 25px 0;
   text-align: center;
@@ -691,4 +710,8 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #07726D;
+}
+
+#mentors .section-subheading{
+  margin-bottom: 50px;
 }
