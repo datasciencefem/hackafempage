@@ -58,6 +58,16 @@ section h3.section-subheading {
   section {
     padding: 150px 0;
   }
+
+  #hero{
+    box-sizing: none;
+  }
+}
+
+@media (min-width: 300px) {
+  #hero{
+    box-sizing: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -109,7 +119,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #212529;
+  background-color: #52163C;
 }
 
 #mainNav .navbar-toggler {
@@ -174,6 +184,29 @@ img::-moz-selection {
     padding: 12px 0;
   }
 }
+
+#mainNav .logo{
+  width: 300%;
+}
+
+#mainNav .imag-logo{
+  width: 100%;
+}
+
+#navbarResponsive {
+  padding-top: 10px;
+}
+
+
+@media (max-width: 379px) {
+  #mainNav .logo{
+    width:40%;
+  }
+  #mainNav .imag-logo{
+    width: 100%;
+  }
+}
+
 
 header.masthead {
   text-align: center;
@@ -389,7 +422,7 @@ header.masthead .intro-text .intro-heading {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #212529;
+  background-color: #;
 }
 
 .portfolio-modal .close-modal .lr .rl {
@@ -672,6 +705,7 @@ section#contact .col-lg-12 .text-center{
 #contact .help-block{
   color: black;
   padding-top: 25px;
+  text-align: justify;
 }
 
 footer {
