@@ -47,13 +47,34 @@ section h3.section-subheading {
   text-transform: none;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+#services h3.section-subheading {
+  margin-bottom: 30px;
+}
+#mentors  {
+  padding: 50px 0;
+}
 
 @media (min-width: 768px) {
   section {
     padding: 150px 0;
   }
+
+  #hero{
+    box-sizing: none;
+  }
 }
 
+@media (min-width: 300px) {
+  #hero{
+    box-sizing: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #services {
+    padding: 80px 70px;
+  }
+}
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -98,7 +119,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #212529;
+  background-color: #52163C;
 }
 
 #mainNav .navbar-toggler {
@@ -163,6 +184,29 @@ img::-moz-selection {
   }
 }
 
+#mainNav .logo{
+  width: 40%;
+}
+
+#mainNav .imag-logo{
+  width: 100%;
+}
+
+#navbarResponsive {
+  padding-top: 10px;
+}
+
+
+@media (max-width: 379px) {
+  #mainNav .logo{
+    width:40%;
+  }
+  #mainNav .imag-logo{
+    width: 100%;
+  }
+}
+
+
 header.masthead {
   text-align: center;
   color: white;
@@ -200,7 +244,7 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -221,6 +265,15 @@ header.masthead .intro-text .intro-heading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+
+#services .row .text-center{
+  display: block;
+  margin: auto;
+}
+
+#services .buttom{
+    padding-top: 25px;
 }
 
 #portfolio .portfolio-item {
@@ -368,7 +421,7 @@ header.masthead .intro-text .intro-heading {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #212529;
+  background-color: #;
 }
 
 .portfolio-modal .close-modal .lr .rl {
@@ -591,18 +644,13 @@ header.masthead .intro-text .intro-heading {
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-section#contact .section-heading {
-  color: #fff;
-}
-
 section#contact .form-group {
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 section#contact .form-group input,
@@ -647,6 +695,16 @@ section#contact :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section#contact .col-lg-12 .text-center{
+  padding-top: 25px;
+}
+
+#contact .help-block{
+  color: black;
+  padding-top: 25px;
+  text-align: justify;
 }
 
 footer {
@@ -705,4 +763,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+
+#mentors .section-subheading{
+  margin-bottom: 50px;
 }
