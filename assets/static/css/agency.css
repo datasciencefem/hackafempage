@@ -156,7 +156,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: #52163C;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -201,7 +201,7 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -592,18 +592,13 @@ header.masthead .intro-text .intro-heading {
 }
 
 section#contact {
-  background-color: #212529;
-  #background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-section#contact .section-heading {
-  color: #fff;
-}
-
 section#contact .form-group {
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 section#contact .form-group input,
@@ -649,6 +644,11 @@ section#contact :-ms-input-placeholder {
   color: #ced4da;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+section#contact .col-lg-12 .text-center{
+  padding-top: 25px;
+}
+
 
 footer {
   padding: 25px 0;
