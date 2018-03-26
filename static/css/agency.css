@@ -669,6 +669,11 @@ section#contact .col-lg-12 .text-center{
   padding-top: 25px;
 }
 
+#contact .help-block{
+  color: black;
+  padding-top: 25px;
+}
+
 footer {
   padding: 25px 0;
   text-align: center;
