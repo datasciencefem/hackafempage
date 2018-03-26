@@ -157,14 +157,13 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: #52163C;
   }
+
   #mainNav .navbar-brand {
     font-size: 1.75em;
     -webkit-transition: all 0.3s;
@@ -502,7 +501,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #07726D;
+  background-color: #52163C;
 }
 
 .timeline > li .timeline-image h4 {
@@ -750,6 +749,20 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #07726D;
 }
+
+#projects .img-fluid:hover{
+  transition: all ease 0.5s;
+  opacity: 0;
+  background: #52163C;
+}
+
+
+#projects .projects-hover-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 
 #mentors .section-subheading{
   margin-bottom: 50px;
