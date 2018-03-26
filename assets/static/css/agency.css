@@ -47,6 +47,12 @@ section h3.section-subheading {
   text-transform: none;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+#services h3.section-subheading {
+  margin-bottom: 30px;
+}
+#mentors  {
+  padding: 50px 0;
+}
 
 @media (min-width: 768px) {
   section {
@@ -54,6 +60,11 @@ section h3.section-subheading {
   }
 }
 
+@media (min-width: 768px) {
+  #services {
+    padding: 80px 70px;
+  }
+}
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -156,7 +167,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: #52163C;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -201,7 +212,7 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -222,6 +233,15 @@ header.masthead .intro-text .intro-heading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+
+#services .row .text-center{
+  display: block;
+  margin: auto;
+}
+
+#services .buttom{
+    padding-top: 25px;
 }
 
 #portfolio .portfolio-item {
@@ -592,18 +612,13 @@ header.masthead .intro-text .intro-heading {
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-section#contact .section-heading {
-  color: #fff;
-}
-
 section#contact .form-group {
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 section#contact .form-group input,
@@ -650,6 +665,10 @@ section#contact :-ms-input-placeholder {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+section#contact .col-lg-12 .text-center{
+  padding-top: 25px;
+}
+
 footer {
   padding: 25px 0;
   text-align: center;
@@ -691,4 +710,8 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #07726D;
+}
+
+#mentors .section-subheading{
+  margin-bottom: 50px;
 }
