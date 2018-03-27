@@ -754,6 +754,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-bottom: 50px;
 }
 
+
 #projects .img-fluid:hover{
   transition: all ease 0.5s;
   opacity: 0;
