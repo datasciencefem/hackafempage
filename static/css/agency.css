@@ -870,3 +870,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     width: 100%;
   }
 }
+
+#sponsors .sponsor{
+  padding-top: 45px;
+}
