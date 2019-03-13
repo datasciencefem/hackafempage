@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon"
+      type="image/png"
+      href="{{ '/'|url}}static/img/logos/favicon2.png">
+
+    <title>Data Science Fem</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ '/'|url}}static/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ '/'|url}}static/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ '/'|url}}static/css/agency.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <div class="logo">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img class="imag-logo" src="{{ '/'|url}}static/img/logos/datasciencefem-logo.png" alt="DATA SCIENCE FEM" href="#hero">
+          </a>
+        </div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team Leaders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#mentors">Mentors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead" id="hero">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome to Data Science FEM!</div>
+          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://datasciencefem.typeform.com/to/xUUrzn" target="_blank">Apply for Challenge</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Data Challenge FEM 365</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate>
+              <div class="row">
+                <div class="col-md-3">
+                  <img class="img-fluid" src="{{ '/'|url}}static/img/home/DATA CHALLENGE 356 FEM-04.png" alt="">
+                </div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <p class="help-block">We are a group of women in Colombia dedicated to study data science called DataScienceFem and we have the challenge to learn Data Science in one year:</p>
+                    <h6 class="text-center">¡¡Data Challenge FEM 365!!</h6>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/projects/"> See our Projects</a>
+
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Our Amazing Team Leaders</h2>
+            <h3 class="section-subheading text-muted">Meet our leaders, who were the first members of this study group, they are dedicated to provide content and tools for our team to finish our challenge:</h3>
+          </div>
+        </div>
+        <div class="row">
+          {% set members = site.query('/team') %}
+          {% for member in members %}
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{{ member|url}}{{ member.image }}" alt="">
+              <h4>{{ member.name }} {{ member.last_name }}</h4>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.twitter.com/{{ member.twitter}}" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.github.com/{{ member.github}}" target="_blank">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/{{ member.linkedin}}" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Members -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Members</h2>
+            <h3 class="section-subheading text-muted">These are the women who have joined us and constantly make a difference in our team.</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="row text-center">
+            <img class="img-fluid" src="{{ '/'|url}}static/img/Members/HackaFEM.jpeg" alt="">
+          </div>
+        </div>
+        <!--<div class="col-lg-12 text-center buttom">
+          <div id="success"></div>
+          <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Go Members</button>
+        </div>-->
+      </div>
+    </section>
+
+
+    <!-- Mentors -->
+    <section class="bg-light" id="mentors">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Mentors</h2>
+            <h3 class="section-subheading text-muted">These are our mentors, they have vast experience working in different IT applications such as web development, python packaging...</h3>
+          </div>
+        </div>
+        <div class="row">
+          {% set mentors = site.query('/mentors') %}
+          {% for mentor in mentors %}
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{{ mentor|url}}{{ mentor.image }}" alt="">
+              <h4>{{ mentor.name }}</h4>
+              <p class="text-muted">{{ mentor.description }}</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.twitter.com/{{ mentor.twitter}}" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.github.com/{{ mentor.github}}" target="_blank">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/{{ mentor.linkedin}}" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sponsors -->
+    <section class="py-5" id="sponsors">
+      <div class="container">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Sponsors</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <a href="https://www.datacamp.com" target="_blank">
+              <img class="img-fluid d-block mx-auto" src="{{ '/'|url}}static/img/logos/DataCamp.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <a href="http://www.widsconference.org/" target="_blank">
+              <img class="img-fluid d-block mx-auto" src="{{ '/'|url}}static/img/logos/WiDS.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <a href="http://www.summan.com/" target="_blank">
+              <img class="img-fluid d-block mx-auto" src="{{ '/'|url}}static/img/logos/Logo de Summan (1).png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <a href="https://monoku.com/" target="_blank">
+              <img class="img-fluid d-block mx-auto" src="{{ '/'|url}}static/img/logos/monoku-square.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6" style="padding-top:25px">
+            <a href="https://www.hugeinc.com/" target="_blank">
+              <img class="img-fluid d-block mx-auto" src="{{ '/'|url}}static/img/logos/huge.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6" style="padding-top:50px">
+            <a href="https://www.rutanmedellin.org/" target="_blank">
+              <img class="img-fluid d-block mx-auto" src="{{ '/'|url}}static/img/logos/rutan.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row sponsor">
+          <div class="col-md-4 col-sm-6">
+            <a href="https://www.accenture.com/" target="_blank">
+              <!--img class="img-fluid d-block mx-auto" src="{{ '/'|url}}static/img/logos/1280px-Accenture.svg.png" alt="">-->
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <a href="https://www.accenture.com/" target="_blank">
+              <img class="img-fluid d-block mx-auto" src="{{ '/'|url}}static/img/logos/1280px-Accenture.svg.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <a href="https://www.galleryhotel.co/movil/terraza.php" target="_blank">
+              <!--<img class="img-fluid d-block mx-auto" src="{{ '/'|url}}static/img/logos/lienzo.png" alt="">-->
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Your Website 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/DataScienceFEM" target="_blank">
+
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/datasciencefem/?ref=br_rs" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/datasciencefem/" target="_blank">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/datasciencefem" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ '/'|url}}static/vendor/jquery/jquery.min.js"></script>
+    <script src="{{ '/'|url}}static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ '/'|url}}static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{{ '/'|url}}static/js/jqBootstrapValidation.js"></script>
+    <script src="{{ '/'|url}}static/js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ '/'|url}}static/js/agency.min.js"></script>
+
+  </body>
+
+</html>

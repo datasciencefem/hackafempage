@@ -1,0 +1,7 @@
+[project]
+name = hackafempage
+url_style = relative
+url = http://datasciencefem.com/
+
+[servers.ghpages]
+target = ghpages+https://datasciencefem/hackafempage/?cname=www.datasciencefem.com
