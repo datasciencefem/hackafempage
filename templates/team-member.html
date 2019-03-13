@@ -1,8 +1,0 @@
-{% extends "layout.html" %}
-{% block title %}{{ this.name }} {{ this.last_name }} {% endblock %}
-{% block body %}
-  <h2>{{ this.name }} {{ this.last_name }}</h2>
-  {{ this.email }}
-  {{ this.dob }}
-  {% if this.image %}<img src="{{ this|url }}{{ this.image }}" width=150 />{% endif %}
-{% endblock %}
