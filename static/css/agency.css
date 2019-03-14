@@ -37,6 +37,7 @@ section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
+  margin-top: 35px;
 }
 
 section h3.section-subheading {
@@ -56,7 +57,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 10px 0;
   }
 
   #hero{
@@ -705,6 +706,7 @@ section#contact :-ms-input-placeholder {
 
 section#contact .col-lg-12 .text-center{
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 #contact .help-block{
